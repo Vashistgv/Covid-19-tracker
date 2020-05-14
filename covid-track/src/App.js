@@ -1,15 +1,16 @@
 import React from 'react';
 import './Nav.css';
-import NavBar from './Nav'
+import NavBar from './component/navBar/NavBar/Nav'
 import Body from './Body'
 import Footer from './Footer'
+import 'antd/dist/antd.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+
       <NavBar/>
-      </header>
+      
       <Body />
       <Footer />
     </div>
