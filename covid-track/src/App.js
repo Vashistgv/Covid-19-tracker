@@ -1,7 +1,7 @@
 import React , {Suspense, lazy} from 'react';
 
 import NavBar from './component/NavBar/Nav'
-import CFooter from './Footer'
+import FooterComponent from './component/Footer/Footer'
 import 'antd/dist/antd.css';
 
 
@@ -16,7 +16,7 @@ function App() {
       <Suspense fallback={<div className="lazy">loading...</div>} >
         <Body />
       </Suspense>
-      <CFooter />
+      <FooterComponent />
     </div>
   );
 }
