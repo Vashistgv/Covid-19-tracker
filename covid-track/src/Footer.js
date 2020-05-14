@@ -1,13 +1,15 @@
 import React from 'react';
+import {Layout} from 'antd'
+
+const  {Footer}  = Layout
 // Footer components here 
- const Footer = () => {
+ const CFooter = () => {
 
     return(
         <div>
-            
-            "Footer"
+          <Footer style={{ textAlign: 'center' }}>Covid ©2020 Created by VA</Footer>
             </div>
     )
 }
 
-export default Footer
+export default CFooter
