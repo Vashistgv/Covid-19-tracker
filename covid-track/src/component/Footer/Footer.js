@@ -8,7 +8,7 @@ class FooterComponent extends React.Component {
     render() {
         return(
             <Layout>
-                <Footer className="Footer" style={{textAlign: 'center', background: "black", color:'white'}}>Footer components here </Footer>
+                <Footer className="Footer" style={{textAlign: 'center', background: "black", color:'white'}}>Covid ©2020 Created by VA </Footer>
             </Layout>
         )
     }
