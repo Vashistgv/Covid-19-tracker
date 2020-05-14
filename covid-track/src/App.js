@@ -1,6 +1,6 @@
 import React from 'react';
-import './Nav.css';
-import NavBar from './component/navBar/NavBar/Nav'
+
+import NavBar from './component/NavBar/Nav'
 import Body from './Body'
 import Footer from './Footer'
 import 'antd/dist/antd.css';
