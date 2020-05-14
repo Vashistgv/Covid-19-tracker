@@ -1,11 +1,10 @@
 import React from 'react';
-// body components here 
+import CovidTable from './component/Table/Table'
  const Body = () => {
 
     return(
         <div>
-            
-            "body"
+           <CovidTable />
             </div>
     )
 }
