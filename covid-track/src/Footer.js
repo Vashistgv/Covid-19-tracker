@@ -1,10 +1,10 @@
 import React from 'react';
-
+// Footer components here 
  const Footer = () => {
 
     return(
         <div>
-            // Footer components here 
+            
             "Footer"
             </div>
     )
