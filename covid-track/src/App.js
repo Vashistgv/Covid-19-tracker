@@ -2,7 +2,7 @@ import React from 'react';
 
 import NavBar from './component/NavBar/Nav'
 import Body from './Body'
-import Footer from './Footer'
+import FooterComponent from './component/Footer/Footer'
 import 'antd/dist/antd.css';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <NavBar/>
       
       <Body />
-      <Footer />
+      <FooterComponent />
     </div>
   );
 }

@@ -1,13 +1,15 @@
 import React from 'react';
+import {Layout} from 'antd';
 
- const Body = () => {
 
-    return(
-        <div>
-            // body components here 
-            "body"
-            </div>
-    )
+class Body extends React.Component{
+    render() {
+        return(
+            <Layout>
+                <div>Content</div>
+            </Layout>
+        )
+    }
 }
 
 export default Body
