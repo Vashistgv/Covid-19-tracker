@@ -45,10 +45,10 @@ const CovidTable = ({ data, loading }) => {
     return (
         <Table columns={columns}
             dataSource={data}
-            pagination={{ pageSize: 10 }}
-            scroll={{ y: 240 }}
+            pagination={{ pageSize: 20 }}
+            
             loading={loading}
-            title={() => 'Covid India Tracker'}
+          
         />
 
     )
