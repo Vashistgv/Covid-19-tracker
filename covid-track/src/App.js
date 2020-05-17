@@ -3,9 +3,10 @@ import {Layout} from 'antd';
 import NavBar from './component/NavBar/Nav';
 import FooterComponent from './component/Footer/Footer'
 import 'antd/dist/antd.css';
+import TestBody from './TestBody'
 
 const { Header, Content, Sider } = Layout;
-const Body = lazy(() => import('./Body'));
+// const Body = lazy(() => import('./Body'));
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
           }}
         >
          <Suspense fallback={<div className="lazy">loading...</div>} >
-        <Body />
+        {/* <Body /> */}
+       <TestBody/> 
       </Suspense>
         </Content>
       </Layout>
