@@ -45,7 +45,7 @@ const CovidTable = ({ data, loading }) => {
     return (
         <Table columns={columns}
             dataSource={data}
-            pagination={{ pageSize: 20 }}
+            pagination={{ pageSize: 10 }}
             
             loading={loading}
           

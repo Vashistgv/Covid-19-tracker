@@ -36,11 +36,10 @@
 .menuCon .ant-menu-item a, .menuCon .ant-menu-submenu-title a{
   padding: 26px 15px;
 }
-.ant-menu-horizontal > .ant-menu-item a:hover {
+/* .ant-menu-horizontal > .ant-menu-item a:hover {
 color: white;
 background-color: #1890ff;
-}
-
+} */
 .menuCon .ant-menu-horizontal{
   border-bottom: none;
 }
