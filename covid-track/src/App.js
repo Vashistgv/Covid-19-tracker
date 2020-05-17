@@ -1,9 +1,9 @@
 import React , {Suspense, lazy} from 'react';
 import {Layout} from 'antd';
 import NavBar from './component/NavBar/Nav';
-import FooterComponent from './component/Footer/Footer'
+import FooterComponent from './component/Footer/Footer';
 import 'antd/dist/antd.css';
-import TestBody from './TestBody'
+import TestBody from './TestBody';
 
 const { Header, Content, Sider } = Layout;
 const Body = lazy(() => import('./Body'));
