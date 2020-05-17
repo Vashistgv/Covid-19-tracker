@@ -1,7 +1,7 @@
 import React from 'react';
 import CovidTable from './component/Table/Table'
 import API from "./utils/API";
-import DistTable from './component/Table/DistTable';
+import DistrictModal from './component/Modal/DistrictModal';
 
 class Body extends React.Component {
     constructor(props) {
@@ -50,7 +50,14 @@ class Body extends React.Component {
 
                 <CovidTable data={this.state.data} loading={this.state.loading} onStateClicked={this.onStateClicked} />
                      
-                      {this.state.displayDist ? <DistTable data={this.state.eachDistrictData} loading="false"  /> : " "}
+                      {this.state.displayDist ? <DistrictModal
+                       data={this.state.eachDistrictData} 
+                       loading="false" 
+                       visible = "true" 
+                       handleOk = { () => this.setState({displayDist : false})}
+                       handleCancel = {() => this.setState({displayDist : false})}
+                        /> :
+                         " "}
             </div>
         )
     }
