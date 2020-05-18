@@ -4,18 +4,12 @@ import "./TestTable.scss";
 
 const columns = [
   {
-    title: "State",
-    dataIndex: "state",
-    key: "state",
+    title: "Distirct",
+    dataIndex: "dist",
+    key: "dist",
     ellipsis: true,
-    render: (text) => (
-      <Tooltip title={text}>
-        {" "}
-        <a>{text}</a>
-      </Tooltip>
-    ),
-    onClick: (e) => e.target.text,
-    sorter: (a, b) => a.state.localeCompare(b.state),
+    render: (text) => <Tooltip title={text}> {text}</Tooltip>,
+    sorter: (a, b) => a.dist.localeCompare(b.dist),
   },
   {
     title: "Active",
@@ -23,12 +17,14 @@ const columns = [
     key: "active",
     ellipsis: true,
     render: (text) => <Tooltip title={text}>{text}</Tooltip>,
+    sortOrder : ["descend"],
     sorter: (a, b) => a.active - b.active,
   },
   {
     title: "Confirmed",
     dataIndex: "confirmed",
     key: "confirmed",
+    responsive: ["md"],
     ellipsis: true,
     render: (text) => <Tooltip title={text}>{text}</Tooltip>,
   },
@@ -36,46 +32,29 @@ const columns = [
     title: "Recovered",
     dataIndex: "recovered",
     key: "recovered",
+    responsive: ["md"],
     ellipsis: true,
     render(text) {
       return (
         <Tooltip title={text}>
           {" "}
-          <span style={{ color: "green", fontWeight: "bold" }}>{text}</span>
+          <span style={{ color: "green" }}>{text}</span>
         </Tooltip>
       );
     },
   },
   {
     title: "Deaths",
-    dataIndex: "deaths",
-    key: "deaths",
+    dataIndex: "deceased",
+    key: "deceased",
     responsive: ["md"],
     render(text) {
       return (
         <Tooltip title={text}>
-          <span style={{ color: "red", fontWeight: "bold" }}>{text}</span>
+          <span style={{ color: "red" }}>{text}</span>
         </Tooltip>
       );
     },
-    filters: [
-      {
-        text: ">1000",
-        value: ">1000",
-      },
-      {
-        text: "<1000",
-        value: "<1000",
-      },
-    ],
-    // onFilter: (text, record) => record.text.value === 1000
-  },
-  {
-    title: "lastupdatedtime",
-    dataIndex: "lastupdatedtime",
-    key: "lastupdatedtime",
-    ellipsis: true,
-    render: (text) => <Tooltip title={text}>{text}</Tooltip>,
   },
 ];
 
@@ -84,9 +63,9 @@ const TestTable = ({ data }) => {
     <div className="tablecss">
       <Table
         columns={columns}
-        dataSource={data}
-        pagination={{ pageSize: 10, responsive: true }}
-        scroll={{ y: 384 }}
+        dataSource={data ? data : []}
+        pagination={{ pageSize: 5, responsive: true }}
+        // scroll={{ y: 269 }}
       />
     </div>
   );
