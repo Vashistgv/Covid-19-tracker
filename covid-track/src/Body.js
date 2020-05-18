@@ -24,9 +24,6 @@ class Body extends React.Component {
          console.log(Data.data.statewise , "api called")       
   this.setState({ data : Data.data.statewise , loading  : false })
 
-//   let sData = await API.get('/state_district_wise.json');
-//          console.log(sData.data , "Dapi called")       
-//   this.setState({ sdata : sData.data , loading  : false })
         console.log(Data.data.statewise, "api called")
 
 
