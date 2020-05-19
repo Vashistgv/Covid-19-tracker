@@ -22,6 +22,13 @@ const columns = [
         ellipsis: true,
 
     },
+    {
+        title: 'Zone',
+        dataIndex: 'zone',
+        key: 'zone',
+        ellipsis: true,
+
+    },
 ]
 
 
