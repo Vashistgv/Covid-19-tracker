@@ -21,6 +21,9 @@ class Body extends React.Component {
 
         // Load async data.
         let Data = await API.get('/data.json');
+         console.log(Data.data.statewise , "api called")       
+  this.setState({ data : Data.data.statewise , loading  : false })
+
         console.log(Data.data.statewise, "api called")
 
 
