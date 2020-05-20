@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Menu} from 'antd';
-import './LeftMenu.css'
+import './LeftMenu.scss'
 import SideDrawer from './sideDrawer'
 
 class LeftMenu extends Component {

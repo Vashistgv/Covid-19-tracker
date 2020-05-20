@@ -1,8 +1,7 @@
 import React from "react";
 import { Modal } from "antd";
-// import DistTable from "../Table/DistTable";
-import TestTable from "../Table/TestTable";
-import "../Table/TestTable.scss";
+import DistTable from "../Table/DistTable";
+import "../Table/Table.scss";
 
 const DistrictModal = ({ data, loading, visible, handleOk, handleCancel }) => {
   return (
@@ -18,8 +17,7 @@ const DistrictModal = ({ data, loading, visible, handleOk, handleCancel }) => {
         onCancel={handleCancel}
         bodyStyle={{ height: "65vh", overflow: "hidden"}}
       >
-        {/* <DistTable data={data} loading={loading} /> */}
-        <TestTable data={data} />
+        <DistTable data={data} loading={loading} />
       </Modal>
     </>
   );

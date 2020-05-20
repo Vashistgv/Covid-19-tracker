@@ -1,6 +1,6 @@
 import React from "react";
 import { Drawer, Button, Menu, Layout } from "antd";
-import "./Nav.css";
+import "./Nav.scss";
 
 import {
   UserOutlined,

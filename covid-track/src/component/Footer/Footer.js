@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Layout} from 'antd';
-import './Footer.css'
+import './Footer.scss'
 const {Footer} = Layout;
 
 class FooterComponent extends React.Component {

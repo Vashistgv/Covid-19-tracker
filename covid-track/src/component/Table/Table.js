@@ -56,17 +56,6 @@ const CovidTable = ({ data, loading, onStateClicked }) => {
           <span style={{ color: "red" }}>{text}</span>
         </Tooltip>
       ),
-      filters: [
-        {
-          text: ">1000",
-          value: ">1000",
-        },
-        {
-          text: "<1000",
-          value: "<1000",
-        },
-      ],
-      // onFilter: (text, record) => record.text.value === 1000
     },
     {
       title: "lastupdatedtime",
