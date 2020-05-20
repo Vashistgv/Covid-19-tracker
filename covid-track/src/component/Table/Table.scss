@@ -1,0 +1,78 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 5px;
+}
+/* .ant-table-tbody > tr > td, .ant-table-thead > tr > th
+{
+padding:4px;
+} */
+.ant-table-tbody > tr > td {
+  font-weight: bold;
+}
+
+thead[class*="ant-table-thead"] th {
+  background-color: firebrick !important;
+  color: white;
+  font-weight: bold;
+  font-weight: bold;
+}
+.ant-table-header {
+  border-radius: 4px;
+}
+.ant-pagination-item,
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.ant-pagination-item,
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link:hover {
+  border: none;
+}
+
+.ant-modal-wrap.modalwrapper {
+  overflow: hidden;
+}
+
+.modalwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modalclass {
+  .ant-modal-title {
+    font-weight: bold;
+  }
+
+  .ant-modal-content {
+    height: 80vh;
+  }
+  .ant-modal-content .ant-modal-body {
+    height: 62vh !important;
+    overflow: hidden !important;
+    padding: 24px;
+    font-size: 14px;
+    line-height: 1.5715;
+    word-wrap: break-word;
+  }
+}
+
+.Red{
+  color: red;
+}
+.Green{
+  color: green;
+}
+.Orange{
+  color: orange;
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LeftMenu from './LeftMenu'
 import RightMenu from './rightMenu'
 
-import './Nav.css';
+import './Nav.scss';
 const  Navbar = () =>  {
 
 
