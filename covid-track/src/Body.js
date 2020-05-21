@@ -41,15 +41,32 @@ class Body extends React.Component {
 
 
     onStateClicked = (text) => {
-        console.log("clickedd")
-        let dist = this.state.districts
+        let dist = this.state.districts ;
+        let Zone  = this.state.Zone;
         let arr = []
+      
        let data =  dist[text]
        for (let item in data.districtData){
        let eachdis = {... data.districtData[item] , dist : item} 
        
           arr.push(eachdis)
        }
+       //looping array to compare 
+       arr = arr.map(district => {
+           if(district.dist !== "Unknown" || district.dist !== "Other State"){
+               //filtering the zone which match the district 
+            let value = Zone.zones &&  Zone.zones.filter(eachzone => {
+                return district.dist === eachzone.district
+            })
+            // adding the zone to district object 
+              if(value[0]) district.zone = value[0].zone 
+            
+           }
+         
+               
+              return district
+      }) 
+        
           this.setState({eachDistrictData : arr , displayDist : true } )
     
     }
