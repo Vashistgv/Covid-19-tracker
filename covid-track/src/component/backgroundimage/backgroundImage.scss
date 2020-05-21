@@ -1,0 +1,110 @@
+.images {
+
+.mask-sanitizer{
+    background-image: url("../mask-sanitizer.jpg");
+    background-color: #cccccc;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px !important;
+    position: relative;
+    margin: 10px;
+}
+.mask-woman{
+    background-image: url("../mask-woman.jpg");
+    background-color: #cccccc;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px !important;
+    position: relative;
+    margin: 10px;
+}
+
+.sneezing{
+    background-image: url("../tablet.jpg");
+    background-color: #cccccc;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px !important;
+    position: relative;
+    margin: 10px;
+}
+.womanmask{
+    background-image: url("../womanmask.jpg");
+    background-color: #cccccc;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px !important;
+    position: relative;
+    margin: 10px; 
+}
+.masks-covid-19-china{
+    background-image: url("../masks-covid-19-china.jpg");
+    background-color: #cccccc;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px !important;
+    position: relative;
+    margin: 10px; 
+}
+.coronavirs{
+    background-image: url("../coronavirs.jpg");
+    background-color: #cccccc;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px !important;
+    position: relative;
+    margin: 10px;
+}
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    line-height: 160px;
+    overflow: hidden;
+  }
+  
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+p{
+    font-size: 40px;
+    color: #fff;
+    text-align: right;
+    white-space: pre-wrap;
+    line-height: 1.8em;
+    font-family: "Times New Roman", Times, serif;
+}
+.Donate{
+    right: 11vw;
+    font-size: 17px;
+    top: 9vh;
+    width: 10vw;
+    font-family: serif;
+    position: relative;
+    height: 11vh;
+    text-align: center;
+    color: black;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: width 2s;
+}&:focus{
+    border: none;
+}
+.Donate:hover{
+    width: 100px;
+    background-color: gray;
+    font-weight: bold;
+}
+.stay{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+}

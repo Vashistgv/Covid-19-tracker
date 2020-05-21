@@ -3,6 +3,7 @@ import { Layout } from "antd";
 import NavBar from "./component/NavBar/Nav";
 import FooterComponent from "./component/Footer/Footer";
 import "antd/dist/antd.css";
+import Images from './component/backgroundimage/images'
 
 const { Header, Content, Sider } = Layout;
 const Body = lazy(() => import("./Body"));
@@ -16,16 +17,19 @@ function App() {
         <NavBar />
       </Header>
 
-      <Layout style={{ padding: "0 50px", marginTop: 64 }}>
+      {/* <Layout style={{ padding: "0 50px", marginTop: 64 }}> */} 
+      {/* for table */}
+      <Layout style={{marginTop: 64}}>
         <Content
           className="site-layout-background"
           style={{
-            padding: 24,
+            // padding: 24, for table
             margin: 0,
           }}
         >
           <Suspense fallback={<div className="lazy">loading...</div>}>
-            <Body />
+            {/* <Body /> */}
+            <Images/>
           </Suspense>
         </Content>
       </Layout>

@@ -1,0 +1,81 @@
+.paraHeader {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  height: 20vh;
+  background-color: #3e3d3d;
+  padding: 45px;
+  .paratext {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+//card style
+
+.cardpara {
+  height: 40vh;
+
+  .coloumns {
+    height: 30vh;
+    width: 30vw;
+    background-image: url(../icons8-protection-mask-100.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.cardss {
+  .ant-row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .ant-row .ant-col {
+    padding: 10px;
+  }
+  .maskimage {
+    background-image: url(../icons8-protection-mask-100.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    padding: 5px;
+    width: 20vw;
+    height: 30vh;
+  }
+  .iconpara {
+    font-size: 15px;
+    width: 20vw;
+    align-items: center;
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+  .gifticon {
+    display: flex;
+    height: 30vh;
+    background-image: url(../icons8-gift-80.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    padding: 5px;
+  }
+  .thermometer {
+    background-image: url(../icons8-thermometer-64.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    padding: 5px;
+    height: 30vh;
+  }
+  .light {
+    display: flex;
+    height: 30vh;
+    background-image: url(../icons8-light-64.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,38 @@
+.para {
+  height: 50vh;
+  align-items: center;
+
+  .headertext {
+    font-size: 25px;
+    font-weight: bold;
+    color: maroon;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .paragraphText{
+    font-size: 25px;
+    width: 45vw;
+    position: absolute;
+    align-items: center;
+    word-break: break-word;
+    white-space: pre-wrap;
+    right: 26vw;
+  }
+}
+.buttoncls{
+    padding: 20px;
+}
+.buttoncls .buttonD{
+    text-align: center;
+    position: relative;
+    left: 43vw;
+    height: 7vh;
+    width: 10vw;
+    background-color: maroon;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+  }
