@@ -12,7 +12,8 @@ class Body extends React.Component {
             data: [],
             districts: {} ,
             eachDistrictData : [] ,
-            displayDist : false 
+            displayDist : false ,
+            Zone : []
         }
     }
 
@@ -28,8 +29,14 @@ class Body extends React.Component {
 
 
         let DistrictData = await API.get('/state_district_wise.json');
-        this.setState({ data: Data.data.statewise, loading: false, districts: DistrictData.data })
-        console.log(DistrictData, "this is data")
+        
+
+
+        let ZoneData = await API.get('/zones.json');
+        this.setState({ data: Data.data.statewise, 
+            loading: false,
+             districts: DistrictData.data ,
+            Zone : ZoneData.data  })
     }
 
 
