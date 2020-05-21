@@ -7,6 +7,31 @@
   pointer-events: none;
 }
 
+.table-comp{
+  width: 70%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 19px;
+
+  
+  .buttoncls {
+    padding: 7px;
+      text-align: center;
+      position: relative;
+      left: 59vw;
+      margin-bottom: 16px;
+      height: 7vh;
+      width: 10vw;
+      background-color: maroon;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      border-radius: 5px;
+      border-style: none;
+    }
+
+  }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -59,3 +59,8 @@ background-color: #1890ff;
   top: 2vh;
   position: relative;
 }
+
+.ant-menu-dark .ant-menu-item-selected .anticon {
+  /* color: #fff; */
+  color: black!important;
+}

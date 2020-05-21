@@ -2,7 +2,7 @@ import React from 'react';
 import CovidTable from './component/Table/Table'
 import API from "./utils/API";
 import DistrictModal from './component/Modal/DistrictModal';
-
+import './App.scss';
 class Body extends React.Component {
     constructor(props) {
         super(props)
@@ -49,7 +49,12 @@ class Body extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="table-comp">
+                <div>
+                    <button 
+                    className="buttoncls"
+                    onClick={this.props.onClick}>Back</button>
+                </div>
 
                 <CovidTable data={this.state.data} loading={this.state.loading} onStateClicked={this.onStateClicked} />
                      

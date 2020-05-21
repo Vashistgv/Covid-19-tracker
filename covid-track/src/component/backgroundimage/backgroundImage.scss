@@ -75,10 +75,14 @@
 p{
     font-size: 40px;
     color: #fff;
-    text-align: right;
+    text-align: left;
     white-space: pre-wrap;
     line-height: 1.8em;
     font-family: "Times New Roman", Times, serif;
+    position: relative ;
+    top: 21%;
+    width: 50%;
+    right: -47%;;
 }
 .Donate{
     right: 11vw;
