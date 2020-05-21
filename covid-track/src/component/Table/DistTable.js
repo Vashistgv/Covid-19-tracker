@@ -63,7 +63,10 @@ const columns = [
           ellipsis: true,
           render(text){
               return(
-                  <Tooltip title={text}>{text}</Tooltip>
+                  <Tooltip title={text}>
+                    <span className={text}>
+                    {text}
+                      </span></Tooltip>
               )
           }
       }
