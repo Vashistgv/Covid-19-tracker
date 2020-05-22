@@ -17,7 +17,7 @@ class paragraph extends React.Component {
         </p>
       </div>
       <div className="buttoncls">
-      <button className="buttonD" onClick={this.props.onClick}>Donate</button>
+      <button className="buttonD" onClick={this.props.onClick}>Tracker</button>
       </div>
       <div>
       <PHeader/>
