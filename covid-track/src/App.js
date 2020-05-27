@@ -4,6 +4,7 @@ import NavBar from "./component/NavBar/Nav";
 import FooterComponent from "./component/Footer/Footer";
 import "antd/dist/antd.css";
 import Images from './component/backgroundimage/images'
+import history from './component/Router/History'
 
 const { Header, Content, Sider } = Layout;
 const Body = lazy(() => import("./Body"));
@@ -16,9 +17,15 @@ class App extends React.Component {
           displayTable : false   
     }
 
-     handleClick = () => {
+    trackerBtn = () => {
       this.setState({displayTable : !this.state.displayTable})
+      history.push('/')
 
+      }
+
+      backBtn = () => {
+        this.setState({displayTable : !this.state.displayTable})
+        history.push('/Tracker')
       }
   render() {
     
@@ -38,8 +45,8 @@ class App extends React.Component {
             }}
           >
             <Suspense fallback={<div className="lazy">loading...</div>}>
-              { this.state.displayTable ?  <Body onClick={this.handleClick} /> :
-              <Images onClick={this.handleClick} />
+              { this.state.displayTable ?  <Body onClick={this.trackerBtn} /> :
+              <Images onClick={this.backBtn} />
               }
               
             </Suspense>

@@ -2,6 +2,7 @@ import React from "react";
 import button from "antd";
 import './Paragraph.scss'
 import PHeader from '../paragraphHeader/paragraphHeader'
+import { Link } from 'react-router-dom'
 
 class paragraph extends React.Component {
   render() {
@@ -17,7 +18,7 @@ class paragraph extends React.Component {
         </p>
       </div>
       <div className="buttoncls">
-      <button className="buttonD" onClick={this.props.onClick}>Tracker</button>
+      <button className="buttonD" component={Link} to="/Tracker" onClick={this.props.onClick}>Tracker</button>
       </div>
       <div>
       <PHeader/>
