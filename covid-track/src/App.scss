@@ -6,16 +6,30 @@
   height: 40vmin;
   pointer-events: none;
 }
+.text {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.socialIcons {
+  a {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
 
-.table-comp{
-  width: 70%;
+.bodyComponent {
+  height: 170vh;
+  .table-comp {
+    width: 70%;
     height: 70vh;
     margin: auto;
     margin-top: 19px;
 
-  
-  .buttoncls {
-    padding: 7px;
+    .buttoncls {
+      padding: 7px;
       text-align: center;
       position: relative;
       left: 59vw;
@@ -29,8 +43,37 @@
       border-radius: 5px;
       border-style: none;
     }
-
   }
+  .tags {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .covid,
+  .facebook,
+  .twitter,
+  .gmail,
+  .linkdin {
+    color: #08c;
+    justify-content: center;
+    padding-left: 0.65rem;
+    transition: all 0.2s ease-in-out;
+    width: 15.5rem;
+    background: rgba(0,123,255,.0627451);
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 5px;
+   &:hover {
+    background: rgba(0,123,255,.188235);
+    }
+  }
+  span{
+    padding: 5px;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
