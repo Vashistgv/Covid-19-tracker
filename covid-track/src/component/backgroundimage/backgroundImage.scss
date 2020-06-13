@@ -112,3 +112,9 @@ p{
     display: flex;
 }
 }
+
+@media (max-width: 600px){
+    .images p{
+        font-size: 20px;
+    }
+}

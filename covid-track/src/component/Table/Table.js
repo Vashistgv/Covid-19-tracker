@@ -32,6 +32,7 @@ const CovidTable = ({ data, loading, onStateClicked }) => {
       title: "Confirmed",
       dataIndex: "confirmed",
       key: "confirmed",
+      responsive: ["md"],
       ellipsis: true,
       render: (text) => <Tooltip title={text}>{text}</Tooltip>,
     },
@@ -40,6 +41,7 @@ const CovidTable = ({ data, loading, onStateClicked }) => {
       dataIndex: "recovered",
       key: "recovered",
       ellipsis: true,
+      responsive: ["md"],
       render: (text) => (
         <Tooltip title={text}>
           <span style={{ color: "green" }}>{text}</span>
@@ -61,6 +63,7 @@ const CovidTable = ({ data, loading, onStateClicked }) => {
       title: "lastupdatedtime",
       dataIndex: "lastupdatedtime",
       key: "lastupdatedtime",
+      responsive: ["md"],
       ellipsis: true,
       render: (text) => <Tooltip title={text}>{text}</Tooltip>,
     },

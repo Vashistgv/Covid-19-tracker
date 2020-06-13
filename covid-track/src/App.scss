@@ -75,6 +75,15 @@
   }
 }
 
+@media (max-width:600px){
+  .bodyComponent{
+height: 180vh;
+  
+   .table-comp .buttoncls{
+    width: 20vw;
+  }
+}
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

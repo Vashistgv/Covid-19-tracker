@@ -26,7 +26,10 @@
 .buttoncls .buttonD{
     text-align: center;
     position: relative;
-    left: 43vw;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
     height: 7vh;
     width: 10vw;
     background-color: maroon;
@@ -35,4 +38,13 @@
     color: white;
     border-radius: 5px;
     border-style: none;
+  }
+
+  @media (max-width: 600px){
+    .para .paragraphText{
+    font-size: 15px;
+    }
+    .buttoncls .buttonD{
+      width: 20vw;
+    }
   }
