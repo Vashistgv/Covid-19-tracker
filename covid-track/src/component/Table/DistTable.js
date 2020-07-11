@@ -63,7 +63,10 @@ const columns = [
           ellipsis: true,
           render(text){
               return(
-                  <Tooltip title={text}>{text}</Tooltip>
+                  <Tooltip title={text}>
+                    <span className={text}>
+                    {text}
+                      </span></Tooltip>
               )
           }
       }
@@ -77,8 +80,7 @@ const DistTable = ({data , loading}) => {
     <Table
      columns={columns}
         dataSource={data ? data : []}
-        pagination={{ pageSize: 10 }}
-        
+        pagination={{ pageSize: 5, responsive: true }}
         loading={loading}
       
     />

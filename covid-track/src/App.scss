@@ -6,7 +6,84 @@
   height: 40vmin;
   pointer-events: none;
 }
+.text {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.socialIcons {
+  a {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
 
+.bodyComponent {
+  height: 170vh;
+  .table-comp {
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 19px;
+
+    .buttoncls {
+      padding: 7px;
+      text-align: center;
+      position: relative;
+      left: 59vw;
+      margin-bottom: 16px;
+      height: 7vh;
+      width: 10vw;
+      background-color: maroon;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      border-radius: 5px;
+      border-style: none;
+    }
+  }
+  .tags {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .covid,
+  .facebook,
+  .twitter,
+  .gmail,
+  .linkdin {
+    color: #08c;
+    justify-content: center;
+    padding-left: 0.65rem;
+    transition: all 0.2s ease-in-out;
+    width: 15.5rem;
+    background: rgba(0,123,255,.0627451);
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 5px;
+   &:hover {
+    background: rgba(0,123,255,.188235);
+    }
+  }
+  span{
+    padding: 5px;
+  }
+}
+
+@media (max-width:600px){
+  .bodyComponent{
+height: 180vh;
+  
+   .table-comp .buttoncls{
+    width: 20vw;
+  }
+}
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
