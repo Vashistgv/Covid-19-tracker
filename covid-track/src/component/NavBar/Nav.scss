@@ -10,7 +10,7 @@
   float: left;
 }
 .LogoImg {
-  background: url(../corona.jpg) center;
+  background: url(../images/corona.jpg) center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -58,4 +58,9 @@ background-color: #1890ff;
   float: right;
   top: 2vh;
   position: relative;
+}
+
+.ant-menu-dark .ant-menu-item-selected .anticon {
+  /* color: #fff; */
+  color: black!important;
 }

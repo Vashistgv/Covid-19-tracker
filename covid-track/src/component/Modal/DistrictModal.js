@@ -12,6 +12,7 @@ const DistrictModal = ({ data, loading, visible, handleOk, handleCancel }) => {
         title="District covid tracker"
         width="60vw"
         style={{top: "0", paddingBottom:"0"}}
+        footer={null}
         visible={visible}
         onOk={handleOk}
         onCancel={handleCancel}
